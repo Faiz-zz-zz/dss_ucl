@@ -33,10 +33,18 @@ for i in range(1, number):
 		array = map(lambda d:float(d), array)
 		regressionLine(array)
 		m = names.index(data[i][1])
-		values[m] = array
-		
+		values[m] = array		
 	except:
+		# print data[i]
 		pass
 	# # array = map(lambda s:re.sub(',','',s),data[i][2:])
-print values
-print names	
+trueValues = []
+for array in values:
+	try:
+		maxima = max(array)
+		trueValues.append(map(lambda x: (x/maxima)*100, array))	
+	except:
+		index = values.index(array)
+		del names[index]	
+print trueValues
+print names

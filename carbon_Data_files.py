@@ -39,6 +39,13 @@ for i in range(1, number):
 	except:
 		pass
 	# # array = map(lambda s:re.sub(',','',s),data[i][2:])
-print values
+trueValues = []
+for array in values:
+	try:
+		maxima = max(array)
+		trueValues.append(map(lambda x: (x/maxima)*100, array))	
+	except:
+		index = values.index(array)
+		del names[index]	
+print trueValues
 print names	
-
