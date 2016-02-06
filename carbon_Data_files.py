@@ -20,32 +20,29 @@ names = []
 
 values = []
 
-for i in range(1, number):
-	try:
-		if data[i][1] != '':
-			names.append(data[i][1])
-	except:
-		pass
-names = sorted(names)
-values = [None for i in names]
+ind = 0
 for i in range(1, number):
 	try:
 		array = map(lambda s:re.sub(',','',s),data[i][2:])
 		array = map(lambda d:float(d), array)
+		ind = len(array)
 		regressionLine(array)
-		m = names.index(data[i][1])
-		values[m] = array
-		
+		values.append(array)
+		names.append(data[i][1])		
 	except:
+		# print data[i]
 		pass
 	# # array = map(lambda s:re.sub(',','',s),data[i][2:])
-trueValues = []
-for array in values:
-	try:
-		maxima = max(array)
-		trueValues.append(map(lambda x: (x/maxima)*100, array))	
-	except:
-		index = values.index(array)
-		del names[index]	
-print trueValues
+
+# print values
+# print names
+
+for i in range(0, ind+3):
+	maxima = 0
+	for j in range(0, len(names)):
+		maxima = max(maxima, values[j][i])
+	for j in range(0, len(names)):
+		values[j][i] = (values[j][i]/maxima)*100	
+
+print values
 print names	
