@@ -1,18 +1,24 @@
+html { 
+  background: url(../images/pic1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
-	background-color: #eeeeee;
 	color: rgba(0, 0, 0, 0.8);
 }
 
-.jumbotron {
-	background-image: url('../images/pic1.jpg');
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-position: 50% 30%;
-	text-align: center;
-	height: 500px;
+#page-wrap { 
+	width: 70%;
+	margin: 0px auto;
+	padding: 20px; 
+	background: #eeeeee;
 }
+
+
 
 .jumbotron h1 {
 	color:#ffffff;
