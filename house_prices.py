@@ -2,7 +2,7 @@ import csv
 import re
 
 def regressionLine(array):
-	yearArray = [i for i in range(2005, 2014)]
+	yearArray = [i for i in range(1996, 2015)]
 	xDash = sum(yearArray)/len(yearArray)
 	n = len(array)
 	yDash = sum(array)/n
@@ -11,11 +11,7 @@ def regressionLine(array):
 	for i in [2020, 2025, 2030]:
 		array.append(a+b*i)
 
-
-
-
-
-with open("carbon.csv", 'r') as f:
+with open("house prices.csv", 'r') as f:
     data = [row for row in csv.reader(f.read().splitlines())]
 number = len(data)
 
