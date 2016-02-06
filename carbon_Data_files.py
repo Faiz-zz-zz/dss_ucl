@@ -12,9 +12,6 @@ def regressionLine(array):
 		array.append(a+b*i)
 
 
-
-
-
 with open("carbon.csv", 'r') as f:
     data = [row for row in csv.reader(f.read().splitlines())]
 number = len(data)
@@ -25,11 +22,20 @@ values = []
 
 for i in range(1, number):
 	try:
+		if data[i][1] != '':
+			names.append(data[i][1])
+	except:
+		pass
+names = sorted(names)
+values = [None for i in names]
+for i in range(1, number):
+	try:
 		array = map(lambda s:re.sub(',','',s),data[i][2:])
 		array = map(lambda d:float(d), array)
 		regressionLine(array)
-		values.append(array)
-		names.append(data[i][1])
+		m = names.index(data[i][1])
+		values[m] = array
+		
 	except:
 		pass
 	# # array = map(lambda s:re.sub(',','',s),data[i][2:])
