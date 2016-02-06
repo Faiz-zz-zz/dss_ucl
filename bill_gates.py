@@ -1,16 +1,21 @@
 import csv
-import sys
-from turtle import *
-import numpy as np
-import scipy.misc.pilutil as smp
+import re
 
-canvas.setup(160, 160)
-gates = open("billgates.csv")
-reader = csv.reader(gates)
+with open("carbon.csv", 'r') as f:
+    data = [row for row in csv.reader(f.read().splitlines())]
+number = len(data)
 
-for row in reader:
-	pencolor((int(row[2]), int(row[3]), int(row[4])))
-	dot()
+names = []
 
+values = []
 
-#['159', '159', '183', '246', '255']	
+for i in range(1, number):
+	names.append(data[i][1])
+	try:
+		values.append(map(lambda d:float(d), map(lambda s:re.sub(',','',s),data[i][2:])))
+	except:
+		pass
+	# array = map(lambda s:re.sub(',','',s),data[i][2:])
+print values
+print names	
+
