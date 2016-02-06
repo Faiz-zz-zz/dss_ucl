@@ -1,0 +1,29 @@
+body {
+	font-family: 'Slabo 27px', serif;
+}
+
+.jumbotron {
+	background-image: url('../images/pic1.jpg');
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-position: 50% 30%;
+	text-align: center;
+	height: 500px;
+}
+
+.jumbotron h1 {
+	color:#ffffff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 85px;
+	padding-top: 125px;
+	text-shadow:  0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.jumbotron p {
+	color:#ffffff;
+	font-size: 30px;
+	text-shadow:  0 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+
