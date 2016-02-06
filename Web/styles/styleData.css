@@ -66,6 +66,27 @@ h2, h3 {
 	color: rgba(255, 255, 255, 0.8);
 }
 
+/* unvisited link */
+a:link {
+    color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* selected link */
+a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 footer {
 	padding-top: 20px;
 	float: bottom;
