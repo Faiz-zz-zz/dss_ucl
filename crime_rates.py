@@ -2,7 +2,7 @@ import csv
 import re
 
 def regressionLine(array):
-	yearArray = [i for i in range(1990, 2016)]
+	yearArray = [i for i in range(1999, 2016)]
 	xDash = sum(yearArray)/len(yearArray)
 	n = len(array)
 	yDash = sum(array)/n
