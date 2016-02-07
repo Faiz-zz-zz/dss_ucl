@@ -1,12 +1,28 @@
+Skip to content
+This repository  
+Search
+Pull requests
+Issues
+Gist
+ @alasdairhall
+ Unwatch 3
+  Star 0
+  Fork 0 abdulfaizp/dss_ucl PRIVATE
+ Code  Issues 0  Pull requests 0  Wiki  Pulse  Graphs
+Branch: master Find file Copy pathdss_ucl/Web/index.html
+c9fa533  just now
+@anirudhpillai anirudhpillai d3
+2 contributors @alasdairhall @anirudhpillai
+RawBlameHistory     89 lines (74 sloc)  3.08 KB
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Better Living in London</title>
-		<meta charset="utf-8">
-		
+		<meta charset="UTF-8">
+
 		<!-- Ensures proper rendering and touch zooming -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
+
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
@@ -15,25 +31,46 @@
 
 		<!-- Bootstrap Latest compiled JavaScript -->
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		
+
 		<!-- Stylesheet -->
 		<link rel="stylesheet" href="styles/style.css">
-		
+
 		<!-- Fonts -->
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		
+
 		<!-- Icon -->
 		<link rel="shortcut icon" type="image/x-icon" href="favico.png" />
+
 	</head>
-	
-	<body>		
+
+	<body>
 		<div class="jumbotron">
 			<div class="container">
 				<h1>Better Living in London</h1>
 				<p>Predicting the future of London's boroughs</p>
 			</div>
 		</div>
-		
+
+		<div class="container">
+			<button class="btn btn-default" id="house">House Prices</button>
+			<button class="btn btn-default" id="carbon">Carbon Emission</button>
+			<button class="btn btn-default" id="crime">Crime</button>
+			<h2>D3</h2>
+			<div id="chart"></div>
+			<button class="btn btn-default" id="one">2005</button>
+			<button class="btn btn-default" id="two">2006</button>
+			<button class="btn btn-default" id="three">2007</button>
+			<button class="btn btn-default" id="four">2008</button>
+			<button class="btn btn-default" id="five">2009</button>
+			<button class="btn btn-default" id="six">2010</button>
+			<button class="btn btn-default" id="seven">2011</button>
+			<button class="btn btn-default" id="eight">2012</button>
+			<button class="btn btn-default" id="nine">2013</button>
+			<button class="btn btn-default" id="ten">2020</button>
+			<button class="btn btn-default" id="eleven">2025</button>
+			<button class="btn btn-default" id="twelve">2030</button>
+		</div>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
@@ -53,12 +90,17 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<footer>
 			<div class="container">
 				<p>Anirudh, Faiz and Alasdair</p>
 			</div>
 		</footer>
-		
+
+
+	  <script src="_/d3.min.js"></script>
+	  <script src="script.js"></script>
 	</body>
 </html>
+Status API Training Shop Blog About Pricing
+© 2016 GitHub, Inc. Terms Privacy Security Contact Help
