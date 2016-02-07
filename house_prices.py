@@ -36,12 +36,12 @@ for i in range(1, number):
 # print values
 # print names
 
-for i in range(0, ind+3):
-	maxima = 0
-	for j in range(0, len(names)):
-		maxima = max(maxima, values[j][i])
-	for j in range(0, len(names)):
-		values[j][i] = (values[j][i]/maxima)*100	
+# for i in range(0, ind+3):
+# 	maxima = 0
+# 	for j in range(0, len(names)):
+# 		maxima = max(maxima, values[j][i])
+# 	for j in range(0, len(names)):
+# 		values[j][i] = (values[j][i]/maxima)*100	
 
 print values
 print names	
