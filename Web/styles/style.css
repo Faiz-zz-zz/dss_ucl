@@ -16,10 +16,15 @@ body {
 
 .jumbotron h1 {
 	color:#ffffff;
-	font-weight: 400; 
+	font-weight: 400;
 	font-size: 85px;
 	padding-top: 125px;
 	text-shadow:  0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.pics img {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .jumbotron p {
@@ -58,4 +63,3 @@ h2, h3 {
     margin-top: 2px;
 	color: rgba(255, 255, 255, 0.8);
 }
-
