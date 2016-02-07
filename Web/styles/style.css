@@ -59,19 +59,3 @@ h2, h3 {
 	color: rgba(255, 255, 255, 0.8);
 }
 
-a, a:visited {
-	color: #6f9ab2;
-	text-decoration: none;
-}
-
-a:hover, a:active:focus {
-	color: #80b1cc;
-	text-decoration: none;
-}
-
-footer {
-	padding-top: 20px;
-	float: bottom;
-}
-
-
