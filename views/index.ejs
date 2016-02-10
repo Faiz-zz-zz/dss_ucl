@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Better Living in London</title>
+		<meta charset="UTF-8">
+
+		<!-- Ensures proper rendering and touch zooming -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<!-- Bootstrap jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<!-- Bootstrap Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="styles/style.css">
+
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- Icon -->
+		<link rel="shortcut icon" type="image/x-icon" href="favico.png" />
+
+	</head>
+
+	<body>
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Better Living in London</h1>
+				<p>Predicting the future of London's boroughs</p>
+			</div>
+		</div>
+
+
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>House Prices</h3>
+					<p>House prices are a big talking point in London and we hope to predict the future prices of London's boroughs.</p>
+					<a href="/houseprices" class="btn btn-default" role="button">See past data</a>
+				</div>
+				<div class="col-sm-4">
+					<h3>CO2 Levels</h3>
+					<p>CO2 is a large contributor to climate change so we will be looking to predict each borough's emissions for future years.<p>
+					<a href="/carbon" class="btn btn-default" role="button">See past data</a>
+				</div>
+				<div class="col-sm-4">
+					<h3>Crime Rates</h3>
+					<p>People want to live somewhere safe so we're looking to predict which boroughs will have the lowest crime rates.</p>
+					<a href="/crime" class="btn btn-default" role="button">See past data</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="topButtons" class="container" style="margin-top: 40px;">
+			<h2 style="margin-top: 40px;margin-bottom:30px;">Our results</h2>
+			<p>Rating: The higher the better. (out of 100)</p>
+				<p>House Prices: The lower the better. (out of 100)</p>
+				<p>Carbon Emission: The lower the better. (out of 100)</p>
+				<p style="margin-bottom: 20px;">Crime: The lower the better. (out of 100)</p>
+			</p>
+			<button class="btn btn-default" id="main">Ratings</button>
+			<button class="btn btn-default" id="house">House Prices</button>
+			<button class="btn btn-default" id="carbon">Carbon Emission</button>
+			<button class="btn btn-default" id="crime">Crime</button>
+			<div id="chart" style="margin-top: 40px;margin-bottom:40px;"></div>
+			<button class="btn btn-default" id="one">2005</button>
+			<button class="btn btn-default" id="two">2006</button>
+			<button class="btn btn-default" id="three">2007</button>
+			<button class="btn btn-default" id="four">2008</button>
+			<button class="btn btn-default" id="five">2009</button>
+			<button class="btn btn-default" id="six">2010</button>
+			<button class="btn btn-default" id="seven">2011</button>
+			<button class="btn btn-default" id="eight">2012</button>
+			<button class="btn btn-default" id="nine">2013</button>
+			<button class="btn btn-default" id="ten">2020</button>
+			<button class="btn btn-default" id="eleven">2025</button>
+			<button class="btn btn-default" id="twelve">2030</button>
+		</div>
+
+		<div class="container pics">
+			<h1 style="margin-top:80px; margin-bottom:20px">Model Checking</h1>
+			<p>
+				We used the Azure ML platform to find which machine learning algorithm to use to predict the future.
+			</p>
+			<img src="images/co2.jpg" class="img-responsive" alt="" />
+			<img src="images/co2result.jpg" class="img-responsive" alt="" />
+			<img src="images/crime.jpg" class="img-responsive" alt="" />
+			<img src="images/crimeresult.jpg" class="img-responsive" alt="" />
+			<img src="images/hp.jpg" class="img-responsive" alt="" />
+			<img src="images/hpresult.jpg" class="img-responsive" alt="" />
+		</div>
+
+		<footer style="margin-top: 40px;">
+			<div class="container">
+				<h1>Made By</h1>
+				<p>Anirudh, Faiz and Alasdair</p>
+			</div>
+		</footer>
+
+	  <script src="d3.min.js"></script>
+	  <script src="script.js"></script>
+	</body>
+</html>
